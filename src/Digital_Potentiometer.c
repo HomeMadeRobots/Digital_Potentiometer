@@ -49,7 +49,8 @@ void DigitPot__Shaft_Position__Reset_Shaft_Absolute_Angular_Position(
 /*============================================================================*/
 void DigitPot__Hw_Interrupt_On_A_Pin( 
     const Digital_Potentiometer* Me,
-    E_IO_Level Pin_Level )
+    E_IO_Level Pin_Level,
+    uint32_t Interruption_Timestamp )
 {
     /* Get level of Pin B */
     E_IO_Level pin_B_level = IO_LEVEL_LOW;
@@ -61,7 +62,8 @@ void DigitPot__Hw_Interrupt_On_A_Pin(
 /*----------------------------------------------------------------------------*/    
 void DigitPot__Hw_Interrupt_On_B_Pin(
     const Digital_Potentiometer* Me,
-    E_IO_Level Pin_Level )
+    E_IO_Level Pin_Level,
+    uint32_t Interruption_Timestamp )
 {
     /* Get level of Pin A */
     E_IO_Level pin_A_level = IO_LEVEL_LOW;
@@ -73,7 +75,8 @@ void DigitPot__Hw_Interrupt_On_B_Pin(
 /*----------------------------------------------------------------------------*/
 void DigitPot__Hw_Interrupt_On_Push_Button_Pin(
     const Digital_Potentiometer* Me, 
-    E_IO_Level Pin_Level )
+    E_IO_Level Pin_Level,
+    uint32_t Interruption_Timestamp )
 {
     /* Test level of switch pin */
     if( IO_LEVEL_LOW==Pin_Level )

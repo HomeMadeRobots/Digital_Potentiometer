@@ -71,12 +71,15 @@ void DigitPot__Shaft_Position__Reset_Shaft_Absolute_Angular_Position(
 /*============================================================================*/
 void DigitPot__Hw_Interrupt_On_A_Pin( 
     const Digital_Potentiometer* Me,
-    E_IO_Level Pin_Level );
+    E_IO_Level Pin_Level,
+    uint32_t Interruption_Timestamp );
 void DigitPot__Hw_Interrupt_On_B_Pin(
     const Digital_Potentiometer* Me,
-    E_IO_Level Pin_Level );
+    E_IO_Level Pin_Level,
+    uint32_t Interruption_Timestamp );
 void DigitPot__Hw_Interrupt_On_Push_Button_Pin(
     const Digital_Potentiometer* Me, 
-    E_IO_Level Pin_Level );
+    E_IO_Level Pin_Level,
+    uint32_t Interruption_Timestamp );
 
 #endif
