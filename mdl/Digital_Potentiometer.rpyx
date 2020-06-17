@@ -75,9 +75,9 @@
 			</IPropertyContainer>
 			</_properties>
 			<_name type="a">Digital_Potentiometer</_name>
-			<_modifiedTimeWeak type="a">4.23.2020::8:36:9</_modifiedTimeWeak>
-			<_modifiedTime type="a">4.23.2020::8:36:9</_modifiedTime>
-			<_lastID type="a">1</_lastID>
+			<_modifiedTimeWeak type="a">6.15.2020::13:7:19</_modifiedTimeWeak>
+			<_modifiedTime type="a">6.15.2020::13:7:19</_modifiedTime>
+			<_lastID type="a">2</_lastID>
 			<_UserColors type="w">
 				<IRPYRawContainer type="e">
 					<size type="a">16</size>
@@ -102,7 +102,7 @@
 			<_defaultSubsystem type="r">
 				<ISubsystemHandle type="e">
 					<_hm2Class type="a">ISubsystem</_hm2Class>
-					<_hname type="a">Rotary_Encoder</_hname>
+					<_hname type="a">Digital_Potentiometer</_hname>
 					<_hid type="a">GUID 873dcc46-807e-4e38-a304-290aec55cac5</_hid>
 				</ISubsystemHandle>
 			</_defaultSubsystem>
@@ -162,13 +162,13 @@
 				<value>GUID 48db7eab-806d-4057-ad4a-9549db952806</value>
 				<value>GUID b3f7fd0e-3f8d-4d27-8187-604dba0b818f</value>
 				<value>GUID 7790bcf8-93df-40d6-917d-4a7488c3b6a1</value>
+				<value>GUID 4a7d7c98-3c36-46ac-8f6d-bd456dfc80ae</value>
 				<value>GUID 92588f01-dec0-4631-b992-3e272787c0f7</value>
 			</AggregatesList>
 		</IProject>
 		<ISubsystem type="e">
 			<fileName type="a">Digital_Potentiometer</fileName>
 			<_id type="a">GUID 873dcc46-807e-4e38-a304-290aec55cac5</_id>
-			<_name type="a">Rotary_Encoder</_name>
 		</ISubsystem>
 		<IProfile type="e">
 			<fileName type="a">Software_Detailed_Design_Metamodel</fileName>
@@ -212,6 +212,10 @@
 			<_id type="a">GUID 7790bcf8-93df-40d6-917d-4a7488c3b6a1</_id>
 			<_partOfTheModelKind type="a">referenceunit</_partOfTheModelKind>
 		</ISubsystem>
+		<ISubsystem type="e">
+			<fileName type="a">Digital_Potentiometer_Design</fileName>
+			<_id type="a">GUID 4a7d7c98-3c36-46ac-8f6d-bd456dfc80ae</_id>
+		</ISubsystem>
 		<IComponent type="e">
 			<_id type="a">GUID 92588f01-dec0-4631-b992-3e272787c0f7</_id>
 			<_myState type="a">139264</_myState>
@@ -228,11 +232,11 @@
 			</m_configActive>
 			<HandlesInMe type="c">
 				<IRPYRawContainer type="e">
-					<size type="a">8</size>
+					<size type="a">9</size>
 					
 						<IHandle type="e">
 							<_hm2Class type="a">ISubsystem</_hm2Class>
-							<_hname type="a">Rotary_Encoder</_hname>
+							<_hname type="a">Digital_Potentiometer</_hname>
 							<_hid type="a">GUID 873dcc46-807e-4e38-a304-290aec55cac5</_hid>
 						</IHandle>
 					
@@ -283,6 +287,13 @@
 							<_hm2Class type="a">ISubsystem</_hm2Class>
 							<_hname type="a">Arduino_Pin</_hname>
 							<_hid type="a">GUID 7790bcf8-93df-40d6-917d-4a7488c3b6a1</_hid>
+						</IHandle>
+					
+					
+						<IHandle type="e">
+							<_hm2Class type="a">ISubsystem</_hm2Class>
+							<_hname type="a">Digital_Potentiometer_Design</_hname>
+							<_hid type="a">GUID 4a7d7c98-3c36-46ac-8f6d-bd456dfc80ae</_hid>
 						</IHandle>
 					
 				</IRPYRawContainer>
